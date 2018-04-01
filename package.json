@@ -1,14 +1,18 @@
 {
-  "name": "coordinate-back",
+  "name": "coordinateBack",
   "version": "0.0.0",
   "description": "",
   "author": "leroydevelops <leroy.develops@gmail.com>",
   "main": "functions/__main__.js",
-  "dependencies": {},
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "mongoose": "^5.0.12",
+    "mongoose-voting": "^0.3.0"
+  },
   "private": true,
   "stdlib": {
     "build": "faaslang",
-    "name": "leroydevelops/coordinate-back",
+    "name": "leroydevelops/coordinateBack",
     "timeout": 10000,
     "publish": true,
     "personalize": {

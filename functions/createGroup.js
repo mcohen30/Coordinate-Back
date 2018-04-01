@@ -11,10 +11,10 @@ var Groups = mongoose.model('Groups', require('../schemas/Groups.js'));
 module.exports = async (name = '', context) => {
   var groupID = 0;
   let result = await db.connect();
-  // console.log(result)
+  console.log(result)
   let newGroup = new Groups({ name: name });
   await newGroup.save();
-  let results = await Groups.findOne();
+  let results = await Groups.find();
 
-  return results._id;
+  return results;
 };
